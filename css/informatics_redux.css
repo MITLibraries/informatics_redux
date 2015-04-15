@@ -216,6 +216,8 @@ div#block-boxes-site-logo {
 	margin-right: 0.5rem;
 }
 header#header div.region-header-third {
+	width: 220px;
+	margin-left: -220px;
 	float:right;
 }
 /* Spacing between blocks in right column of header */
