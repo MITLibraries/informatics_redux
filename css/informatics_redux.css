@@ -1,0 +1,655 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 12px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	font-family: Arial, sans-serif;
+	background: #fff;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://themes.googleusercontent.com/static/fonts/ptsansnarrow/v3/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff) format('woff');
+}
+
+/* Tag re-writes */
+h2, h3, h4, h5, h6 {
+	font-family: 'PT Sans Narrow','Arial Narrow',Arial, sans-serif;
+	color: #9a3334;
+	border-bottom: 1px solid #ccc;
+}
+h2 {
+	font-size: 17px;
+}
+h3 {
+	font-size: 14px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+h4 {
+	font-size: 11px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+a {
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+b, strong {
+	font-weight: bold;
+}
+em, i {
+	font-style: italic;
+}
+ol, ul, dl {
+	margin-bottom: 1em;
+}
+ul {
+	margin-left: 1.25em;
+}
+ol {
+	margin-left: 1.5em;
+}
+dl dt {
+	font-weight: bold;
+}
+dl dd {
+	margin-left: 1em;
+}
+blockquote {
+	margin: 1em;
+	color: inherit;
+}
+pre {
+	font-family: monospace;
+	white-space: pre;
+	margin-bottom: 1em;
+}
+code {
+	font-family: monospace;
+	white-space: pre;
+	padding: 0.5em;
+	display: block;
+	border: 1px solid #ccc;
+	background: #f2f2f2;
+	margin-bottom: 1em;
+}
+
+/* Generic Styles */
+.element-invisible {
+	position: absolute;
+	left: -9999px;
+}
+.element-focusable:focus {
+	top: 0;
+	left: 0;
+	text-align: center;
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+}
+div.node-content {
+	font-size: 12px;
+}
+
+/* ############################################################################
+####
+#### General Page Elements
+# */
+
+/* Overall container */
+div#page.container {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+
+/* Messages area */
+div#messages {
+	margin: 0 auto;
+	display: none;
+}
+div#messages div.messages {
+	margin: 0 auto;
+	width: 980px;
+	padding: 20px;
+	border: 2px solid #ff6666;
+	background: #fcc;
+}
+
+/* Header */
+header#header {
+	margin-top: 8px;
+	margin-top: 0.5rem;
+	border-bottom: 8px solid #9a3334;
+	border-bottom: 0.5rem solid #9a3334;
+	color: #9a3334;
+}
+header#header div#header-container {
+	margin: 0 auto;
+	width: 960px;
+	color: #fff;
+	padding: 0;
+}
+header#header div.region-header-first {
+	display: none;
+}
+header#header div.region-header-second {
+	width: 65%;
+}
+header#header div.region-header-second div.block-boxes {
+	display: inline-block;
+	vertical-align: middle;
+}
+div#block-boxes-site-logo {
+	margin-right: 8px;
+	margin-right: 0.5rem;
+}
+header#header div.region-header-third {
+	float:right;
+}
+/* Spacing between blocks in right column of header */
+header#header div.region-header-third div.block {
+	margin-bottom: 1em;
+}
+
+/* Other header styles */
+header#header div.region-inner {
+	padding-top: 0;
+}
+header#header div#header-container h1 {
+	font-size: 20px;
+}
+header#header div#header-container a {
+	color: #fff;
+	text-decoration: none;
+}
+header#header div#header-container h1 a {
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	color: #9a3334;
+}
+header#header div#boxes-box-site_info p {
+	display: none;
+}
+header#header div#boxes-box-site_info h2 {
+	border-bottom: none;
+}
+header#header form#search-block-form {
+	padding: 0;
+}
+div#boxes-box-os_addthis .addthis_toolbox a span {
+	background-color: #fff;
+}
+
+/* Menu bar */
+div#menu-bar {
+	background-image: url('/sites/all/themes/informatics_redux/images/gradient_menu.png'); 
+	background-position: center top;
+	background-repeat: repeat-x;
+	box-shadow: 0px 2px 5px 0 #eee;
+	height: 50px;
+	margin-bottom: 10px;
+
+}
+div#menu-bar nav#block-os-primary-menu {
+	margin: 0 auto;
+	width: 960px;
+}
+div#menu-bar nav#block-os-primary-menu li {
+	list-style-type: none;
+	display: inline-block;
+}
+div#menu-bar nav#block-os-primary-menu li a {
+	height: 100%;
+	display: inline-block;
+	padding: 18px 10px;
+	font-size: 15px;
+	color: #676767;
+	text-decoration: none;
+}
+div#menu-bar nav#block-os-primary-menu li a:hover,
+div#menu-bar nav#block-os-primary-menu li a:focus {
+	background: #676767;
+	color: #fff;
+}
+
+
+div#columns {
+	background: #fff;
+	padding-bottom: 73px; /* Size of the footer, plus 15px */
+	line-height: 1.1em;
+}
+div#columns div.hg-container {
+	margin: 0 auto;
+	width: 940px;
+/*	background: url("/sites/all/themes/informatics_redux/images/16_col.gif") repeat scroll center top #FFFFFF; */
+}
+
+/* Styles for all regions */
+div#columns div#content-column div.content-inner {
+	padding: 0;
+}
+div#columns div#content-panels div.region div.block-inner {
+	margin: 0;
+}
+div.region-content-first .block-boxes,
+div.region-content-second .block-boxes,
+div.region-content-bottom .block-boxes,
+div.region .block-views {
+	margin-bottom: 1em;
+}
+
+div.sidebar ul {
+	margin-left: 0;
+}
+div.sidebar ul li {
+	list-style-type: none;
+}
+
+footer#footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 58px;
+	font-size: 12px;
+	background: #676767;
+}
+footer#footer a {
+	color: white;
+}
+footer#footer div.at-panel {
+	width: 960px;
+	margin: 0 auto;
+	background: #676767; /* This is doube-specified because the footer declaration misses horizontally-scrolled content on narrower screens */
+}
+footer#footer div.region-inner {
+	padding-top: 0; /* override default behavior to get logo to sit correctly */
+}
+/* MIT Branding styles */
+footer#footer div#mit-branding div.mit img {
+	background: #fff; /* MIT logo is clear background - set to white */
+	float: left;
+	padding: 11px;
+}
+footer#footer div#mit-branding div.libraries img {
+	background: none; /* MIT logo is clear background - set to white */
+	float: left;
+	padding: 15px;
+}
+footer#footer div#mit-branding p {
+	/* Center institution names vertically, technique from 
+	http://phrogz.net/css/vertical-align/index.html 
+	*/
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	/* push names past the image */
+	margin-left: 180px;
+}
+/* Contact Us styles */
+footer#footer div#contact-us {
+	height: 58px;
+}
+footer#footer div#contact-us p {
+	/* Center institution names vertically, technique from 
+	http://phrogz.net/css/vertical-align/index.html 
+	*/
+	position: absolute;
+	top: 50%;
+	margin-top: -6px;
+	text-align: right;
+}
+footer#footer div#powerby-login {
+	margin: 0 auto;
+	width: 980px;
+}
+
+/* ############################################################################
+####
+#### Front Page Styles
+# */
+
+/* Now we start beating on the original CSS to achieve our desired layout */
+/* div#content-column becoms the top row */
+body.front div#columns div#content-column div.content-inner {
+	margin: 0;
+}
+body.front div#columns div#content-panels div.region {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* Region-specific styles */
+body.front div#columns div#content-panels div.region-content-top {
+	background-color: #e6e6e6;
+	margin: 1em -1em;
+	padding: 1em;
+}
+body.front div#columns div#content-panels div.region-content-top div.region-inner {
+	padding-top: 0;
+}
+body.front div#columns div#content-panels div.region-content-first {
+	width: 220px;
+	margin-right: 10px;
+}
+body.front div#columns div#content-panels div.region-content-second {
+	width: 460px;
+	margin: 0 10px;
+}
+body.front div#columns div#content-panels div.region-content-bottom {
+	width: 220px;
+	margin-left: 10px;
+}
+
+/* Panel-specific styles */
+/* Feature Project tabs */
+body.front div#columns div#content-column div.content-inner section#block-boxes-1362682820 {
+	display: inline-block;
+	width: 940px;
+	vertical-align: top;
+}
+body.front div#columns div#content-column div.content-inner section#block-boxes-1362682820 div.block-inner {
+	margin: 0;
+}
+body.front div#columns div#content-column div.content-inner section#block-boxes-1362682820 div.block-inner h2.block-title {
+	display: inline-block;
+	width: 270px;
+	color: #fff;
+	background-color: #9a3334;
+	border-bottom: none;
+	padding: 5px;
+	font-size: 20px;
+	margin: 0 10px 0 0;
+}
+/* Feature image - the Dome */
+body.front div#columns div#content-column div.content-inner div#block-boxes-1362673486 {
+	display: inline-block;
+	width: 280px;
+	margin-left: 10px;
+}
+body.front div#columns div#content-column div.content-inner div#block-boxes-1362673486 div.block-inner {
+	margin: 0;
+}
+
+div#tabs {
+	padding: 0;
+	font-size: 12px;
+	width: 100%;
+	background: none;
+}
+div#tabs ul.ui-tabs-nav {
+	padding: 0;
+	display: inline-block;
+	width: 280px;
+	border: none;
+}
+div#tabs ul.ui-tabs-nav li {
+	background: none;
+	border: none;
+	border-top: 1px solid #ccc;
+	padding: 2px 0;
+}
+div#tabs ul.ui-tabs-nav li a {
+	width: 98%;
+	padding: 2% 0 2% 2%;
+}
+div#tabs ul.ui-tabs-nav li.ui-state-active a {
+	background: #676767;
+	color: #fff;
+}
+div#tabs ul.ui-tabs-nav li:first-child a {
+	border-top: none;
+}
+div#tabs ul.ui-tabs-nav li a:hover,
+div#tabs ul.ui-tabs-nav li a:focus {
+	background: #ccc;
+	color: #000;
+}
+div#tabs div.ui-tabs-panel {
+	display: inline-block;
+	width: 640px;
+	padding: 0;
+	margin-top: -23px;
+	background: none;
+	border-top: none;
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); /* Overriding an IE-specific gradient from global.pages.css */
+	filter: none;
+	-ms-filter: none;	
+}
+div#tabs div.ui-tabs-panel div.text {
+	width: 330px;
+	margin-right: 10px;
+	display: inline;
+	float: left;
+}
+div#tabs div.ui-tabs-panel div.logo {
+	width: 280px;
+	margin-left: 0px;
+	display: inline;
+	float: left;
+	height: 100%;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.ui-tabs-vertical {width:100%;}
+.ui-tabs-vertical .ui-tabs-nav { float: left; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel { float: right; }
+
+/* Typography elements */
+div#columns div#content-column {
+	font-size: 12px;
+}
+div#columns div#content-column p {
+	margin: 0 0 1em 0;
+}
+div#columns div#content-column a {
+	font-weight: bold;
+}
+.node-content ul {
+	list-style: disc;
+}
+div#columns div#content-column ol {
+	list-style: decimal;
+}
+div#columns div#content-column h1#page-title {
+	margin-top: 0.5em;
+	font-size: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', 'Arial Narrow', 'Arial', sans-serif;
+	color: #9a3334;
+	line-height: 1em;
+}
+body.front div#columns div#content-panels div.region h2,
+body.not-front div#columns div.region h2 {
+	font-size: 17px;
+	color: #9a3334;
+	text-transform: uppercase;
+	font-family: 'PT Sans Narrow', 'Arial Narrow', 'Arial', sans-serif;
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 0.5em;
+}
+
+/* Front page Publications */
+body.front .block-boxes-os_sv_list_box ul li {
+	margin-bottom: 10px;
+}
+body.front .block-boxes-os_sv_list_box ul li a {
+	margin-bottom: 5px;
+}
+
+/* Front page events list */
+body.front .view-os-events .views-row {
+	margin-bottom: 10px;
+	border-bottom: none;
+}
+body.front .view-os-events .views-row .views-field-colorbox {
+	margin-bottom: 3px;
+}
+body.front .view-os-events .views-row .views-field-field-date {
+	margin-bottom: 5px;
+}
+
+/* Front page Latest News block */
+body.front div#box-os_news_latest-page article.node {
+	margin-bottom: 10px;
+}
+body.front div#box-os_news_latest-page h1 {
+	font-size: 12px; /* This is the teaser headline under "Latest News" - should match other headlines in size */
+	margin-bottom: 3px;
+}
+body.front div#box-os_news_latest-page div.field-name-field-news-date {
+	margin-bottom: 5px;
+}
+body.front div#box-os_news_latest-page article nav.clearfix {
+	display: none; /* This is a duplicate "read more" link, unneeded because the article title links to the article as well. */
+}
+
+/* Front page Tweet list */
+body.front .tweets-pulled-listing li {
+	margin-bottom: 10px;
+}
+body.front .tweets-pulled-listing li .tweet-text {
+	margin-bottom: 3px;
+}
+body.front .tweets-pulled-listing li .tweet-time {
+	margin-bottom: 5px;
+}
+body.front .tweets-pulled-listing li .tweet-divider {
+	display: none;
+}
+
+/* ############################################################################
+####
+#### Internal Page Styles
+# */
+
+/* All content lists */
+.view-content .views-row header,
+.view-content .views-row .views-field-title {
+	padding-bottom: 3px;
+}
+.view-content .views-row .field-item,
+.view-content .views-row .views-field-created {
+	padding-bottom: 2px;
+}
+.view-content .views-row .field-name-body,
+.view-content .views-row .views-field-body {
+	padding-top: 3px;
+}
+
+/* People page styles */
+article.node-person h2 {
+	padding-bottom: 3px; /* Spacing under title/link */
+}
+article.node-person .field-item {
+	padding-bottom: 2px; /* Spacing between lines */
+}
+article.node-person .field-name-body {
+	padding-top: 3px; /* Spacing after entry */
+}
+
+/* News page styles */
+body.not-front .block-boxes-os_sv_list_box h1.node-title {
+	padding-bottom: 2px;
+}
+body.not-front .field-name-field-news-date {
+	padding-bottom: 3px;
+}
+
+/* Blog page styles */
+.view-os-blog .views-field-title {
+	font-size: 1.15em;
+}
+.view-os-blog .views-row {
+	padding-bottom: 3em;
+}
+a[href*="http://feeds.wordpress.com"] {
+	display: none; /* Hide "Add a comment" links that come with WordPress feeds */
+}
+/* Blog sidebar styles */
+body .feed_item span {
+	font-style: normal; 
+}
+body .feed_item a.title {
+	display: block;
+	font-size: 14px;
+}
+

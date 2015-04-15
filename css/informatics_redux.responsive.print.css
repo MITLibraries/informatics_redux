@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://themes.googleusercontent.com/static/fonts/ptsansnarrow/v3/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff) format('woff');
+}
+body {
+	font-family: Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'PT Sans Narrow','Arial Narrow',Arial, sans-serif;
+}
+
+/* Show the header, but... */
+header#header {
+	display: inherit;
+}
+/* ... Re-apply positioning within the second region (inline, w/margin spacing) */
+header#header div.region-header-second div.block-boxes {
+	display: inline-block;
+	vertical-align: middle;
+}
+div#block-boxes-site-logo {
+	margin-right: 8px;
+	margin-right: 0.5rem;
+}
+/* ...suppress the search box... */
+header div.region-header-third {
+	display: none;
+}
+/* ... and change the h1 formatting. */
+header#header h1 a {
+	text-decoration: none;
+	color: #9a3334;
+} 
+/* Don't print calendar navigation/links */
+body.page-calendar header#main-content-header div#tasks,
+body.page-calendar div#content div.attachment-before,
+body.page-calendar div#content ul.pager
+{
+	display: none;
+}

@@ -1,0 +1,76 @@
+/**
+ * Custom layout styles for "MIT Informatics Redux" theme
+ *
+*/
+.cp-region {
+	outline: 1px solid #ccc;
+}
+/* Header regions
+* No first region
+* Second and Third are 66/33
+*/
+.cp-region-header-first {
+	outline: 1px solid #fdd;
+	background: #fdd;
+	width: 1%;
+	min-width: 1%;
+	min-height: 1em;
+}
+.cp-region-header-second {
+	width: 65%;
+}
+.cp-region-header-third {
+	width: 32%;
+}
+/* Front page content regions */
+#edit-layout.content-regions .cp-region-sidebar-first,
+#edit-layout.content-regions .cp-region-sidebar-second {
+	display: none;
+}
+#edit-layout.content-regions .cp-region-content {
+	width: 100%;
+	min-height: 18em;
+	margin-bottom: 1em;
+}
+#edit-layout.content-regions .cp-region-content-first {
+	width: 24%;
+	margin-right: 1%;
+}
+#edit-layout.content-regions .cp-region-content-second {
+	margin: 0;
+	width: 50%;
+}
+#edit-layout.content-regions .cp-region-content-bottom {
+	width: 24%;
+	margin-left: 1%;
+	margin-top: 0;
+	min-height: 18em;
+}
+/* Interior page content regions */
+.cp-region-sidebar-first {
+	width: 1%;
+	min-width: 1%;
+	min-height: 1em;
+	outline: 1px solid #fdd;
+	background: #fdd;
+}
+.cp-region-content {
+	width: 73%;
+}
+/* Footer regions
+* No first region
+* Main and Third are 66/33
+*/
+.cp-region-footer-first {
+	outline: 1px solid #fdd;
+	background: #fdd;
+	width: 1%;
+	min-width: 1%;
+	min-height: 1em;
+}
+.cp-region-footer {
+	width: 65%;
+}
+.cp-region-footer-third {
+	width: 32%;
+}
