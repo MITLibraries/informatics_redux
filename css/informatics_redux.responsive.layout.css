@@ -13,7 +13,7 @@
 #header-container .gpanel .region {float: left; clear: none;}
 .header-left.header-main.header-right .region-header-second .region-inner {margin-left: 200px; margin-right: 290px;}
 .header-left.header-main .region-header-second .region-inner {margin-left: 200px; margin-right: 0;}
-.header-main.header-right .region-header-second .region-inner {margin-right: 290px; margin-left: 0;}
+.header-main.header-right .region-header-second .region-inner {margin-right: 100px; margin-left: 0;}
 .region-header-first {width:200px; margin-left:-100%;}
 .region-header-third {width:290px; margin-left:-290px;text-align: right;}
 .region-header-second {width:100%;}

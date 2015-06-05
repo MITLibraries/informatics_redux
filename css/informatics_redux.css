@@ -233,7 +233,6 @@ header#header div#header-container h1 {
 	font-size: 20px;
 }
 header#header div#header-container a {
-	color: #fff;
 	text-decoration: none;
 }
 header#header div#header-container h1 a {
@@ -248,6 +247,12 @@ header#header div#boxes-box-site_info h2 {
 }
 header#header form#search-block-form {
 	padding: 0;
+}
+header#header h2.department-link {
+	border: none;
+}
+header#header div#header-container h2.department-link a {
+	color: #9a3334;
 }
 div#boxes-box-os_addthis .addthis_toolbox a span {
 	background-color: #fff;
