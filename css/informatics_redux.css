@@ -251,7 +251,12 @@ header#header form#search-block-form {
 header#header h2.department-link {
 	border: none;
 }
+header#header div#header-container h2.department-link {
+	/* margin-top: 4px; Needed to push down the department name to be inline with site name */
+	color: #676767;
+}
 header#header div#header-container h2.department-link a {
+	margin-left: 10px;
 	color: #9a3334;
 }
 div#boxes-box-os_addthis .addthis_toolbox a span {
