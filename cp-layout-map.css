@@ -23,12 +23,8 @@
 	width: 32%;
 }
 /* Front page content regions */
-#edit-layout.content-regions .cp-region-sidebar-first,
-#edit-layout.content-regions .cp-region-sidebar-second {
-	display: none;
-}
 #edit-layout.content-regions .cp-region-content {
-	width: 100%;
+	width: 96%;
 	min-height: 18em;
 	margin-bottom: 1em;
 }
@@ -47,7 +43,8 @@
 	min-height: 18em;
 }
 /* Interior page content regions */
-.cp-region-sidebar-first {
+.cp-region-sidebar-first,
+.cp-region-sidebar-second {
 	width: 1%;
 	min-width: 1%;
 	min-height: 1em;
