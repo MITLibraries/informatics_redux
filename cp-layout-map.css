@@ -43,8 +43,16 @@
 	min-height: 18em;
 }
 /* Interior page content regions */
-.cp-region-sidebar-first,
-.cp-region-sidebar-second {
+/* Sidebar-first is always suppressed */
+.cp-region-sidebar-first {
+	width: 1%;
+	min-width: 1%;
+	min-height: 1em;
+	outline: 1px solid #fdd;
+	background: #fdd;
+}
+/* Sidebar second is suppressed on front page only */
+form.os_front .cp-region-sidebar-second {
 	width: 1%;
 	min-width: 1%;
 	min-height: 1em;
