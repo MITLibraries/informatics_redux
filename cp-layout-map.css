@@ -22,11 +22,31 @@
 .cp-region-header-third {
 	width: 32%;
 }
-/* Front page content regions */
+/* General layout regions */
+/* Sidebar-first is always suppressed */
+.cp-region-sidebar-first {
+	width: 1%;
+	min-width: 1%;
+	min-height: 1em;
+	outline: 1px solid #fdd;
+	background: #fdd;
+}
+/* Main content allows for one sidebar */
 #edit-layout.content-regions .cp-region-content {
 	width: 73%;
 	min-height: 18em;
 	margin-bottom: 1em;
+}
+/* Front page layout overrides */
+form.os_front .cp-region-sidebar-second {
+	width: 1%;
+	min-width: 1%;
+	min-height: 1em;
+	outline: 1px solid #fdd;
+	background: #fdd;
+}
+form.os_front #edit-layout.content-regions .cp-region-content {
+	width: 96%;
 }
 form.os_front #edit-layout.content-regions .cp-region-content-first {
 	width: 24%;
@@ -42,26 +62,7 @@ form.os_front #edit-layout.content-regions .cp-region-content-bottom {
 	margin-top: 0;
 	min-height: 18em;
 }
-/* Interior page content regions */
-/* Sidebar-first is always suppressed */
-.cp-region-sidebar-first {
-	width: 1%;
-	min-width: 1%;
-	min-height: 1em;
-	outline: 1px solid #fdd;
-	background: #fdd;
-}
-/* Sidebar second is suppressed on front page only */
-form.os_front .cp-region-sidebar-second {
-	width: 1%;
-	min-width: 1%;
-	min-height: 1em;
-	outline: 1px solid #fdd;
-	background: #fdd;
-}
-form.os_front .cp-region-content {
-	width: 96%;
-}
+
 .cp-region-content {
 	width: 73%;
 }
