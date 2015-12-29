@@ -23,7 +23,7 @@
 	width: 32%;
 }
 /* Front page content regions */
-form.os_front #edit-layout.content-regions .cp-region-content {
+#edit-layout.content-regions .cp-region-content {
 	width: 73%;
 	min-height: 18em;
 	margin-bottom: 1em;
