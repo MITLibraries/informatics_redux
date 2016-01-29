@@ -1,7 +1,7 @@
 
 ;----------// Theme Information
 
-  name        = MIT Informatics Redux
+  name        = MIT Informatics Redux 7.x-1.1beta1
   description = A rebuilt Informatics theme for use at the MIT Libraries' Program for Information Science.
   core        = 7.x
   base theme  = os_basetheme
