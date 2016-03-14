@@ -1,7 +1,7 @@
 
 ;----------// Theme Information
 
-  name        = MIT Informatics Redux 7.x-1.1beta1
+  name        = MIT Informatics Redux 7.x-1.2.0
   description = A rebuilt Informatics theme for use at the MIT Libraries' Program for Information Science.
   core        = 7.x
   base theme  = os_basetheme
@@ -41,7 +41,7 @@
   settings[bigscreen_set_max_width]  = 1
   settings[bigscreen_max_width]      = 1140
   settings[bigscreen_media_query]    = 'only screen and (min-width:1025px)'
-  
+
     ; Layout settings - Tablet landscape
   settings[tablet_landscape_layout]         = 'three_col_grail'
   settings[tablet_landscape_page_unit]      = '%'
@@ -80,9 +80,3 @@
   settings[smartphone_portrait_sidebar_first]  = 100
   settings[smartphone_portrait_sidebar_second] = 100
   settings[smartphone_portrait_media_query]    = 'only screen and (max-width:320px)'
-
-
-
-
-
-
