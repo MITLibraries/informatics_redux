@@ -1,5 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0b1 | 201101 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
    NOTE: WORK IN PROGRESS
    USE WITH CAUTION AND TEST WITH ABANDON */
 
@@ -12,7 +12,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -44,7 +44,7 @@ q:before, q:after {
 	content: none;
 }
 
-/* remember to define visible focus styles! 
+/* remember to define visible focus styles!
 :focus {
 	outline: ?????;
 } */
@@ -265,7 +265,7 @@ div#boxes-box-os_addthis .addthis_toolbox a span {
 
 /* Menu bar */
 div#menu-bar {
-	background-image: url('/sites/all/themes/informatics_redux/images/gradient_menu.png'); 
+	background-image: url('/sites/all/themes/informatics_redux/images/gradient_menu.png');
 	background-position: center top;
 	background-repeat: repeat-x;
 	box-shadow: 0px 2px 5px 0 #eee;
@@ -359,8 +359,8 @@ footer#footer div#mit-branding div.libraries img {
 	padding: 15px;
 }
 footer#footer div#mit-branding p {
-	/* Center institution names vertically, technique from 
-	http://phrogz.net/css/vertical-align/index.html 
+	/* Center institution names vertically, technique from
+	http://phrogz.net/css/vertical-align/index.html
 	*/
 	position: absolute;
 	top: 50%;
@@ -373,8 +373,8 @@ footer#footer div#contact-us {
 	height: 58px;
 }
 footer#footer div#contact-us p {
-	/* Center institution names vertically, technique from 
-	http://phrogz.net/css/vertical-align/index.html 
+	/* Center institution names vertically, technique from
+	http://phrogz.net/css/vertical-align/index.html
 	*/
 	position: absolute;
 	top: 50%;
@@ -498,7 +498,7 @@ div#tabs div.ui-tabs-panel {
 	border-top: none;
 	-ms-filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); /* Overriding an IE-specific gradient from global.pages.css */
 	filter: none;
-	-ms-filter: none;	
+	-ms-filter: none;
 }
 div#tabs div.ui-tabs-panel div.text {
 	width: 330px;
@@ -524,22 +524,28 @@ div#tabs div.ui-tabs-panel div.logo {
 .ui-tabs-vertical .ui-tabs-panel { float: right; }
 
 /* Typography elements */
-div#columns div#content-column {
+div#columns div#content-column,
+#tinymce {
 	font-size: 12px;
 }
-div#columns div#content-column p {
+div#columns div#content-column p,
+#tinymce p {
 	margin: 0 0 1em 0;
 }
-div#columns div#content-column a {
+div#columns div#content-column a,
+#tinymce a {
 	font-weight: bold;
 }
-.node-content ul {
+.node-content ul,
+#tinymce ul {
 	list-style: disc;
 }
-div#columns div#content-column ol {
+div#columns div#content-column ol,
+#tinymce ol {
 	list-style: decimal;
 }
-div#columns div#content-column h1#page-title {
+div#columns div#content-column h1#page-title
+#tinymce h1#page-title {
 	margin-top: 0.5em;
 	font-size: 28px;
 	font-weight: 400;
@@ -549,7 +555,8 @@ div#columns div#content-column h1#page-title {
 	line-height: 1em;
 }
 body.front div#columns div#content-panels div.region h2,
-body.not-front div#columns div.region h2 {
+body.not-front div#columns div.region h2
+#tinymce h2 {
 	font-size: 17px;
 	color: #9a3334;
 	text-transform: uppercase;
@@ -658,10 +665,9 @@ a[href*="http://feeds.wordpress.com"] {
 }
 /* Blog sidebar styles */
 body .feed_item span {
-	font-style: normal; 
+	font-style: normal;
 }
 body .feed_item a.title {
 	display: block;
 	font-size: 14px;
 }
-
