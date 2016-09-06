@@ -544,7 +544,7 @@ div#columns div#content-column ol,
 #tinymce ol {
 	list-style: decimal;
 }
-div#columns div#content-column h1#page-title
+div#columns div#content-column h1#page-title,
 #tinymce h1#page-title {
 	margin-top: 0.5em;
 	font-size: 28px;
