@@ -660,11 +660,20 @@ body.not-front .field-name-field-news-date {
 .view-os-blog .views-row {
 	padding-bottom: 3em;
 }
-.view-os-blog ul li {
-	list-style-type: disc;
+.view-os-blog blockquote {
+	background: #eee;
+	padding: 1em;
+	margin: 1em 0;
+	font-style: italic;
+}
+div#columns div#content-column .view-os-blog blockquote p:last-child {
+	margin-bottom: 0;
 }
 .view-os-blog ol li {
 	list-style-type: decimal;
+}
+.view-os-blog sup {
+	top: -0.1em;
 }
 .view-os-blog table {
 	margin: 1em 0;
@@ -674,14 +683,8 @@ body.not-front .field-name-field-news-date {
 	border: 1px solid #ccc;
 	padding: 0.25em;
 }
-.view-os-blog blockquote {
-	background: #eee;
-	padding: 1em;
-	margin: 1em 0;
-	font-style: italic;
-}
-div#columns div#content-column .view-os-blog blockquote p:last-child {
-	margin-bottom: 0;
+.view-os-blog ul li {
+	list-style-type: disc;
 }
 a[href*="http://feeds.wordpress.com"] {
 	display: none; /* Hide "Add a comment" links that come with WordPress feeds */
