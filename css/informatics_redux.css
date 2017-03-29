@@ -654,35 +654,46 @@ body.not-front .field-name-field-news-date {
 }
 
 /* Blog page styles */
+/* This is specific to the list of blog posts, as the title is treated differently
+   on the single view */
 .view-os-blog .views-field-title {
 	font-size: 1.15em;
 }
+/* This is specific to the list of blog posts, so we don't repeat node-blog (single view) */
 .view-os-blog .views-row {
 	padding-bottom: 3em;
 }
+.node-blog blockquote,
 .view-os-blog blockquote {
 	background: #eee;
 	padding: 1em;
 	margin: 1em 0;
 	font-style: italic;
 }
-div#columns div#content-column .view-os-blog blockquote p:last-child {
+.node-blog blockquote p:last-child,
+.view-os-blog blockquote p:last-child {
 	margin-bottom: 0;
 }
+.node-blog ol li,
 .view-os-blog ol li {
 	list-style-type: decimal;
 }
+.node-blog sup,
 .view-os-blog sup {
 	top: -0.1em;
 }
+.node-blog table,
 .view-os-blog table {
 	margin: 1em 0;
 }
+.node-blog table th,
 .view-os-blog table th,
+.node-blog table td,
 .view-os-blog table td {
 	border: 1px solid #ccc;
 	padding: 0.25em;
 }
+.node-blog ul li,
 .view-os-blog ul li {
 	list-style-type: disc;
 }
