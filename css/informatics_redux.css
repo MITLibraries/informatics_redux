@@ -326,6 +326,7 @@ div.sidebar ul {
 }
 div.sidebar ul li {
 	list-style-type: none;
+	margin-bottom: 0.75em;
 }
 
 footer#footer {
