@@ -76,7 +76,7 @@ body {
   font-family: 'PT Sans Narrow';
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://themes.googleusercontent.com/static/fonts/ptsansnarrow/v3/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff) format('woff');
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(https://themes.googleusercontent.com/static/fonts/ptsansnarrow/v3/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff) format('woff');
 }
 
 /* Tag re-writes */
@@ -698,7 +698,7 @@ body.not-front .field-name-field-news-date {
 .view-os-blog ul li {
 	list-style-type: disc;
 }
-a[href*="http://feeds.wordpress.com"] {
+a[href*="https://feeds.wordpress.com"] {
 	display: none; /* Hide "Add a comment" links that come with WordPress feeds */
 }
 /* Blog sidebar styles */
