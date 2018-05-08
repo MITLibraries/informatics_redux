@@ -22,7 +22,7 @@
   stylesheets[screen][] = css/informatics_redux.responsive.layout.css
   stylesheets[screen][] = css/informatics_redux.responsive.tablet.css
   stylesheets[screen][] = css/informatics_redux.responsive.smartphone.css
-  stylesheets[screen][] = http://fonts.googleapis.com/css?family=PT+Sans+Narrow
+  stylesheets[screen][] = https://fonts.googleapis.com/css?family=PT+Sans+Narrow
   stylesheets[print][] = css/informatics_redux.responsive.print.css
 
   scripts[] = js/lib/jquery.ui.tabs.js

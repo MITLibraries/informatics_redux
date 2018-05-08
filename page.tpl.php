@@ -147,7 +147,7 @@
 			$page['footer_third'] ||
 			$page['footer_bottom']
 			): ?>
-	  
+
 			<div class="at-panel gpanel panel-display footer clearfix">
 				<?php print render($page['footer_top']); ?>
 				<?php print render($page['footer_first']); ?>
@@ -155,14 +155,14 @@
 				<?php print render($page['footer_third']); ?>
 				<?php print render($page['footer_bottom']); ?>
 			</div>
-		
+
 		<!--footer region end-->
   <?php endif; ?>
   <div id="powerby-login">
   	<?php if (isset($login_link)) {
-    print render($login_link); 
+    print render($login_link);
   } ?>
-  	<div id="powered-by"><a href="http://openscholar.harvard.edu">OpenScholar</a></div>
+  	<div id="powered-by"><a href="https://openscholar.harvard.edu">OpenScholar</a></div>
     </div>
   </footer>
   </div>

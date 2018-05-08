@@ -2,7 +2,7 @@
   font-family: 'PT Sans Narrow';
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(http://themes.googleusercontent.com/static/fonts/ptsansnarrow/v3/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff) format('woff');
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url(https://themes.googleusercontent.com/static/fonts/ptsansnarrow/v3/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff) format('woff');
 }
 body {
 	font-family: Arial, sans-serif;
@@ -32,7 +32,7 @@ header div.region-header-third {
 header#header h1 a {
 	text-decoration: none;
 	color: #9a3334;
-} 
+}
 /* Don't print calendar navigation/links */
 body.page-calendar header#main-content-header div#tasks,
 body.page-calendar div#content div.attachment-before,
